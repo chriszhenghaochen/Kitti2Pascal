@@ -36,8 +36,8 @@ for item in txt_list:
                 labeldata = each_line.strip().split(' ')  
                 if labeldata[0] in ['Truck','Van','Tram','Car']: #I don't need cat category
                     continue 
-                if labeldata[0] in ['Person_sitting', 'Pedestrian', 'Cyclist']: # only person is what I need
-                    labeldata[0] = labeldata[0].replace(labeldata[0],'Person')  
+                if labeldata[0] in ['Person_sitting', 'Pedestrian', 'Cyclist', 'Person']: # only person is what I need
+                    labeldata[0] = labeldata[0].replace(labeldata[0],'person')  
                 if labeldata[0] == 'DontCare': # miss don't care 
                     continue  
                 if labeldata[0] == 'Misc': #miss Misc
